@@ -12,7 +12,6 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
 import com.example.domain.Article;
-import com.fasterxml.jackson.databind.ser.std.MapProperty;
 
 /**
  * 投稿情報をDBとやり取りするリポジトリクラス.
