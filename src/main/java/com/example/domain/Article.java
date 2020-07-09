@@ -7,11 +7,19 @@ package com.example.domain;
  *
  */
 public class Article {
+	/** 主キー(ID) */
+	private Integer id;
 	/** 投稿者名 */
 	private String name;
 	/** 投稿内容 */
 	private String comment;
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
