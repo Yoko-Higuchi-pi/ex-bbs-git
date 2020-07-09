@@ -21,7 +21,7 @@ import com.example.domain.Comment;
  */
 @Repository
 public class CommentRepository {
-	private static final RowMapper<Comment> COMMENT_ROW_MAPPER = new BeanPropertyRowMapper<>();
+	private static final RowMapper<Comment> COMMENT_ROW_MAPPER = new BeanPropertyRowMapper<>(Comment.class);
 	@Autowired
 	private NamedParameterJdbcTemplate template;
 
