@@ -21,7 +21,7 @@ import com.example.domain.Article;
  */
 @Repository
 public class ArticleRepository {
-	private static final RowMapper<Article> ARTICLE_ROW_MAPPER = new BeanPropertyRowMapper<>();
+	private static final RowMapper<Article> ARTICLE_ROW_MAPPER = new BeanPropertyRowMapper<>(Article.class);
 	
 	@Autowired
 	private NamedParameterJdbcTemplate template;
